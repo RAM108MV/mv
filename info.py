@@ -97,14 +97,14 @@ APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 # Others
 NO_RESULTS_MSG = is_enabled((environ.get('NO_RESULTS_MSG', "False")), True)
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
-DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
+DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1001903307186').split()]
 PORT = os.environ.get("PORT", "8080")
-MAX_BTN = int(environ.get('MAX_BTN', "7"))
+MAX_BTN = int(environ.get('MAX_BTN', "10"))
 S_GROUP = environ.get('S_GROUP',"https://t.me/hd_request")
 MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/hdmaxx")
 FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/hdmaxx")
 MSG_ALRT = environ.get('MSG_ALRT', 'ƚɾყ ɱყ αʅʅ ϝυƚυɾҽʂ')
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '-1001530594023'))
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '0'))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001903307186'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'hd_request')
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
