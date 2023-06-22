@@ -44,11 +44,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('🎭 ʀ ɢʀᴏᴜᴘ', url=f"https://t.me/HD_REQUEST"),
+            InlineKeyboardButton('🎭 ɢʀᴏᴜᴘ', url=f"https://t.me/HD_REQUEST"),
             InlineKeyboardButton('📽 ᴄʜᴀɴɴᴇʟ', url=f"https://t.me/HDMAXX")
         ], [
             InlineKeyboardButton('⚡️ғᴜᴛᴜʀᴇs ', callback_data='help'),
-            InlineKeyboardButton('🔎 sᴇᴀʀᴄʜ ᴍᴏᴠɪᴇs', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ ʜᴇʀᴇ', switch_inline_query_current_chat='')
         ], [
             InlineKeyboardButton('❄️ ᴊᴏɪɴ ᴛʜɪs ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴍᴇ ❄️', url=f"https://t.me/HDMAXX")
         ]]
@@ -95,11 +95,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('🎭 ʀ ɢʀᴏᴜᴘ', url=f"https://t.me/HD_REQUEST"),
+            InlineKeyboardButton('🎭 ɢʀᴏᴜᴘ', url=f"https://t.me/HD_REQUEST"),
             InlineKeyboardButton('📽 ᴄʜᴀɴɴᴇʟ', url=f"https://t.me/HDMAXX")
         ], [
             InlineKeyboardButton('⚡️ғᴜᴛᴜʀᴇs ', callback_data='help'),
-            InlineKeyboardButton('🔎 sᴇᴀʀᴄʜ ᴍᴏᴠɪᴇs', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ ʜᴇʀᴇ', switch_inline_query_current_chat='')
         ], [
             InlineKeyboardButton('❄️ ᴊᴏɪɴ ᴛʜɪs ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴍᴇ ❄️', url=f"https://t.me/HDMAXX")
         ]]
@@ -251,7 +251,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('☀️ ʀᴇǫᴜᴇꜱᴛ ᴀɢᴀɪɴ ☀️', url=f"https://t.me/hd_request") ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('**☀️ ʀᴇǫᴜᴇꜱᴛ ᴀɢᴀɪɴ ☀️**', url=f"https://t.me/hd_request") ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
