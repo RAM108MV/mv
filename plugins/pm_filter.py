@@ -473,7 +473,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             typed = clicked #if failed, uses the clicked user's ID as requested user ID
         files_ = await get_file_details(file_id)
         if not files_:
-            return await query.answer(f"📝 ꜰɪʟᴇ ɴᴀᴍᴇ:- {file_name}\n\n🔅 sɪᴢᴇ:- {file_size}\n\n⚡️ ʜᴀᴘᴘʏ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴀɴᴅ ᴄᴏᴍᴇ ᴀɢᴀɪɴ 🌼")
+            return await query.answer(f"**⚡️ ʜᴀᴘᴘʏ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴀɴᴅ ᴄᴏᴍᴇ ᴀɢᴀɪɴ 🌼**")
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
@@ -551,7 +551,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
         if not files_:
-            return await query.answer(f"📝 ꜰɪʟᴇ ɴᴀᴍᴇ:- {file_name}\n\n🔅 sɪᴢᴇ:- {file_size}\n\n⚡️ ʜᴀᴘᴘʏ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴀɴᴅ ᴄᴏᴍᴇ ᴀɢᴀɪɴ 🌼")
+            return await query.answer(f"**⚡️ ʜᴀᴘᴘʏ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴀɴᴅ ᴄᴏᴍᴇ ᴀɢᴀɪɴ 🌼**")
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
