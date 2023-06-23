@@ -14,7 +14,7 @@ from plugins.helper_functions.get_file_id import get_file_id
 async def telegraph(client, message):
     replied = message.reply_to_message
     if not replied:
-        await message.reply_text("𝚁𝙴𝙿𝙻𝚈 𝚃𝙾 𝙰 𝙿𝙷𝙾𝚃𝙾 𝙾𝚁 𝚅𝙸𝙳𝙴𝙾 𝚄𝙽𝙳𝙴𝚁 𝟻𝙼𝙱.")
+        await message.reply_text("⚠️ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴘʜᴏᴛᴏ ᴏʀ ᴠɪᴅᴇᴏ ᴜɴᴅᴇʀ 5 ᴍʙ")
         return
     file_info = get_file_id(replied)
     if not file_info:
@@ -36,7 +36,7 @@ async def telegraph(client, message):
         await message.reply_text(message, text=document)
     else:
         await message.reply(
-            f"Link :- <code>https://telegra.ph{response[0]}</code>",
+            f"❤️ ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ ᴄᴏᴍᴘʟᴇᴛᴇᴅ 👇\n\n<code>https://telegra.ph{response[0]}</code>\n\n☀️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ:- @all_movies1_bo",
             disable_web_page_preview=True
         )
     finally:
