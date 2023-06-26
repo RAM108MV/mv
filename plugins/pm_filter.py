@@ -192,7 +192,7 @@ async def next_page(bot, query):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'⛔️ ꜱᴜᴘᴘᴏʀᴛ ᴜꜱ ⛔️', url=f"https://t.me/I_M_STARBOY")
+            InlineKeyboardButton(f'⛔️ ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ⛔️', url=f"https://t.me/hdmaxx")
         ]
     )
     btn.insert(1, 
@@ -1397,7 +1397,7 @@ async def auto_filter(client, msg, spoll=False):
             ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'⛔️ ꜱᴜᴘᴘᴏʀᴛ ᴜꜱ ⛔️', url=f"https://t.me/I_M_STARBOY")
+            InlineKeyboardButton(f'⛔️ ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ⛔️', url=f"https://t.me/hdmaxx")
         ]
     )
     btn.insert(1, 
