@@ -191,18 +191,39 @@ async def next_page(bot, query):
                 for file in files
         ]
     btn.insert(0, 
-        [
-            InlineKeyboardButton(f'⛔️ ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ⛔️', url=f"https://t.me/hdmaxx")
-        ]
+                [
+                    InlineKeyboardButton("ᴀʟʟ​", callback_data=f"send_fall#files#{key}#{offset}"),
+                    InlineKeyboardButton("sᴇʟᴇᴄᴛ​", callback_data="ooooo")
+                ]
+            )
+
+        else:
+            btn.insert(0, 
+                [
+                    InlineKeyboardButton("ᴀʟʟ​", callback_data=f"send_fall#files#{key}#{offset}"),
+                    InlineKeyboardButton("sᴇʟᴇᴄᴛ​", callback_data="ooooo")
+                ]
+            )
+
     )
-    btn.insert(1, 
-         [
-             InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-             InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-             InlineKeyboardButton(f'sᴇʀɪᴇs', 'sinfo'),
-             InlineKeyboardButton(f'ᴛɪᴘs', 'tinfo')
-         ]
-    )
+    btn.insert(
+                0,
+                [
+                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),
+                    InlineKeyboardButton("ꜰᴏʀᴍᴀᴛ​", 'format'),
+                    InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips'),
+                ],
+            )
+
+        else:
+            btn.insert(
+                0,
+                [
+                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),
+                    InlineKeyboardButton("ꜰᴏʀᴍᴀᴛ​", 'format'),
+                    InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips'),
+                ],
+            )
 
     if 0 < offset <= 10:
         off_set = 0
