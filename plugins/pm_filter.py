@@ -803,7 +803,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('📽 ᴍᴏᴠɪᴇꜱ ʟɪɴᴋ', url=f"https://t.me/HDMAXX")
         ], [
             InlineKeyboardButton('⚡️ ғᴜᴛᴜʀᴇs ', callback_data='help'),
-            InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ ʜᴇʀᴇ', switch_inline_query_current_chat='')
+            InlineKeyboardButton('👨‍🎓 ʙᴏᴛ ᴏᴡɴᴇʀ', url=f"http://t.me/sb_boss_bot")
         ], [
             InlineKeyboardButton('❄️ ᴊᴏɪɴ ᴛʜɪs ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴍᴇ ❄️', url=f"https://t.me/HDMAXX")
         ]]
