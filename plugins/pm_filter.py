@@ -191,39 +191,18 @@ async def next_page(bot, query):
                 for file in files
         ]
     btn.insert(0, 
-                [
-                    InlineKeyboardButton("ᴀʟʟ​", callback_data=f"send_fall#files#{key}#{offset}"),
-                    InlineKeyboardButton("sᴇʟᴇᴄᴛ​", callback_data="ooooo")
-                ]
-            )
-
-        else:
-            btn.insert(0, 
-                [
-                    InlineKeyboardButton("ᴀʟʟ​", callback_data=f"send_fall#files#{key}#{offset}"),
-                    InlineKeyboardButton("sᴇʟᴇᴄᴛ​", callback_data="ooooo")
-                ]
-            )
-
+        [
+            InlineKeyboardButton(f'⛔️ ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ⛔️', url=f"https://t.me/I_M_STARBOY")
+        ]
     )
-    btn.insert(
-                0,
-                [
-                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),
-                    InlineKeyboardButton("ꜰᴏʀᴍᴀᴛ​", 'format'),
-                    InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips'),
-                ],
-            )
-
-        else:
-            btn.insert(
-                0,
-                [
-                    InlineKeyboardButton(f'♻️ ɪɴꜰᴏ', 'info'),
-                    InlineKeyboardButton("ꜰᴏʀᴍᴀᴛ​", 'format'),
-                    InlineKeyboardButton(f'ᴛɪᴘs​ ⚜', 'tips'),
-                ],
-            )
+    btn.insert(1, 
+         [
+             InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
+             InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
+             InlineKeyboardButton(f'sᴇʀɪᴇs', 'sinfo'),
+             InlineKeyboardButton(f'ᴛɪᴘs', 'tinfo')
+         ]
+    )
 
     if 0 < offset <= 10:
         off_set = 0
@@ -494,7 +473,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             typed = clicked #if failed, uses the clicked user's ID as requested user ID
         files_ = await get_file_details(file_id)
         if not files_:
-            return await query.answer(f"**⚡️ ʜᴀᴘᴘʏ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴀɴᴅ ᴄᴏᴍᴇ ᴀɢᴀɪɴ 🌼**")
+            return await query.answer(f"<b>⚡️ ʜᴀᴘᴘʏ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴀɴᴅ ᴄᴏᴍᴇ ᴀɢᴀɪɴ 🌼</b>")
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
@@ -572,7 +551,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
         if not files_:
-            return await query.answer(f"**⚡️ ʜᴀᴘᴘʏ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴀɴᴅ ᴄᴏᴍᴇ ᴀɢᴀɪɴ 🌼**")
+            return await query.answer(f"<b>⚡️ ʜᴀᴘᴘʏ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴀɴᴅ ᴄᴏᴍᴇ ᴀɢᴀɪɴ 🌼</b>")
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
@@ -802,7 +781,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🎭 ɢʀᴏᴜᴘ', url=f"https://t.me/HD_REQUEST"),
             InlineKeyboardButton('📽 ᴍᴏᴠɪᴇꜱ ʟɪɴᴋ', url=f"https://t.me/HDMAXX")
         ], [
-            InlineKeyboardButton('⚡️ ғᴜᴛᴜʀᴇs ', callback_data='help'),
+            InlineKeyboardButton('⚡️ғᴜᴛᴜʀᴇs ', callback_data='help'),
             InlineKeyboardButton('👨‍🎓 ʙᴏᴛ ᴏᴡɴᴇʀ', url=f"http://t.me/sb_boss_bot")
         ], [
             InlineKeyboardButton('❄️ ᴊᴏɪɴ ᴛʜɪs ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴍᴇ ❄️', url=f"https://t.me/HDMAXX")
@@ -1478,7 +1457,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         cap = f"""
-<b>**🎪 ᴛɪᴛɪʟᴇ : {search}
+<b>🎪 ᴛɪᴛɪʟᴇ : {search}
 
 ┏⁉️ ᴀsᴋᴇᴅ ʙʏ : {message.from_user.mention}
 ┣🔆 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href=https://t.me/HD_request>ʜᴅ ʀᴇǫᴜᴇsᴛ</a>
@@ -1486,7 +1465,7 @@ async def auto_filter(client, msg, spoll=False):
 
 ⚠️ ᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️
 
-❇️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href=https://t.me/HD_request>ʜᴅ ʀᴇǫᴜᴇsᴛ**</a>
+❇️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href=https://t.me/HD_request>ʜᴅ ʀᴇǫᴜᴇsᴛ</a>
 """
     if imdb and imdb.get('poster'):
         try:
