@@ -59,11 +59,11 @@ MELCOW_VID = environ.get('MELCOW_VID',"")
 
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1936430521 2034319320').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '2034319320').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001530594023 -1001714499165').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '0').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('-1001713726502')
+auth_channel = environ.get('-1001784080940')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -101,11 +101,11 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 PORT = os.environ.get("PORT", "8080")
 MAX_BTN = int(environ.get('MAX_BTN', "10"))
 S_GROUP = environ.get('S_GROUP',"https://t.me/hd_request")
-MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/hdmaxx")
-FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/hdmaxx")
+MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/+-FcngP9amJ9jYjA1")
+FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/+-FcngP9amJ9jYjA1")
 MSG_ALRT = environ.get('MSG_ALRT', 'ᴛʀʏ ᴍʏ ᴀʟʟ ғᴜᴛᴜʀᴇꜱ 🪷')
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '0'))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001903307186'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001557416007'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'hd_request')
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
