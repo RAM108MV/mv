@@ -253,15 +253,22 @@ This module only works for my admins
 𝙵𝙾𝚁 𝚄𝚂𝙸𝙽𝙶 𝚃𝙷𝙴 𝙼𝙾𝙳𝚄𝙻𝙴 𝙹𝚄𝚂𝚃 𝚂𝙴𝙽𝙳 𝚃𝙷𝙴 𝚃𝙴𝚇𝚃 𝙰𝙽𝙳 𝚁𝙴𝙿𝙻𝚈 𝚃𝙾 𝙸𝚃 𝚆𝙸𝚃𝙷 /carbon 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚃𝙷𝙴 𝙱𝙾𝚃 𝚆𝙸𝙻𝙻 𝚁𝙴𝙿𝙻𝚈 𝚆𝙸𝚃𝙷 𝚃𝙷𝙴 𝙲𝙰𝚁𝙱𝙾𝙽 𝙸𝙼𝙰𝙶𝙴"""
 
 
-    LOG_TEXT_G = """#NewGroup
-Group = {}(<code>{}</code>)
-Total Members = <code>{}</code>
-Added By - {}
-"""
-    LOG_TEXT_P = """#NewUser
-ID - <code>{}</code>
-Name - {}
-"""
+    LOG_TEXT_G = """<b>#ɴᴇᴡ_ɢʀᴏᴜᴩ
+
+◉ ɢʀᴏᴜᴩ: {a}
+◉ ɢ-ɪᴅ: <code>{b}</code>
+◉ ʟɪɴᴋ: @{c}
+◉ ᴍᴇᴍʙᴇʀꜱ: <code>{d}</code>
+◉ ᴀᴅᴅᴇᴅ ʙʏ: {e}
+
+◉ ʙʏ: @{f}</b>"""
+    LOG_TEXT_P = """#ɴᴇᴡ_ᴜꜱᴇʀ
+    
+◉ ᴜꜱᴇʀ-ɪᴅ: <code>{}</code>
+◉ ᴀᴄᴄ-ɴᴀᴍᴇ: {}
+◉ ᴜꜱᴇʀɴᴀᴍᴇ: @{}
+
+◉ ʙʏ: @{}</b>"""
     FILE_MSG = """
 <b>Hai 👋 {} </b>😍
 
