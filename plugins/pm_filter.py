@@ -1457,16 +1457,15 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         cap = f"""
-<b>🎪 ᴛɪᴛɪʟᴇ : {search}
+<b>**<b>📝 ᴛɪᴛʟᴇ </b>- <a href={url}>{title}</a> 
+🎭 ɢᴇɴʀᴇꜱ - {genres}
+📆 ʏᴇᴀʀ - <a href={url}/releaseinfo>{year}</a>
+〽️ ʀᴀᴛɪɴɢ - <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
+🔉 ʟᴀɴɢᴜᴀɢᴇ - <code>{languages}</code>
+🔂 ʀᴜɴ ᴛɪᴍᴇ - {runtime} Minutes
 
-┏⁉️ ᴀsᴋᴇᴅ ʙʏ : {message.from_user.mention}
-┣🔆 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href=https://t.me/HD_request>ʜᴅ ʀᴇǫᴜᴇsᴛ</a>
-┗♻️ ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/HDmaxx>ʜᴅᴍᴀxx</a>
-
-⚠️ ᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 🗑️
-
-❇️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href=https://t.me/HD_request>ʜᴅ ʀᴇǫᴜᴇsᴛ</a>
-"""
+🔰 ʀᴇǫᴜᴇꜱᴛᴇᴅ ʙʏ - {message.from_user.mention}
+❓ᴘᴏᴡᴇʀᴇᴅ ʙʏ - {message.chat.title}**</b>"""
     if imdb and imdb.get('poster'):
         try:
             if message.chat.id == SUPPORT_CHAT_ID:
